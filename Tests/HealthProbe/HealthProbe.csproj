@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\HealthBackend.cs" Link="HealthBackend.cs" />
+    <Compile Include="..\..\GameDetection.cs" Link="GameDetection.cs" />
+    <Compile Include="..\..\Native.cs" Link="Native.cs" />
+  </ItemGroup>
+</Project>

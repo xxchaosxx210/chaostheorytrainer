@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\TrainerModel.cs" Link="TrainerModel.cs" />
+    <Compile Include="..\..\GameDetection.cs" Link="GameDetection.cs" />
+  </ItemGroup>
+</Project>

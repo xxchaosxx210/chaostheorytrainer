@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>ChaosTheoryTrainer</AssemblyName>
+    <Version>0.1.0</Version>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Using Remove="System.Windows.Forms" />
+    <Using Remove="System.Drawing" />
+    <Compile Remove="Tests\**\*.cs" />
+    <Content Include="Native\out\CTHealthHost.exe" Link="CTHealthHost.exe" CopyToOutputDirectory="PreserveNewest" Condition="Exists('Native\out\CTHealthHost.exe')" />
+    <Content Include="Native\out\CTHealthBridge.dll" Link="CTHealthBridge.dll" CopyToOutputDirectory="PreserveNewest" Condition="Exists('Native\out\CTHealthBridge.dll')" />
+  </ItemGroup>
+</Project>
